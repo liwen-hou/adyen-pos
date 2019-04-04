@@ -93,7 +93,8 @@ class Client
 
 if(isset($_POST['submit']))
 {
-  Client::doPostRequest();
+  $date = new DateTime();
+  echo $date;
   // $result = json_decode($result, true);
 
 }
