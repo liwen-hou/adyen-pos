@@ -67,7 +67,7 @@ date_default_timezone_set("Europe/Amsterdam");
               <form class="needs-validation" method="post" action="lib/Client.php">
                 <div class="mb-3">
                   <label>Total Amount €:</label>
-                  <input type="number" step="any" class="form-control" id="paymentAmount" placeholder="">
+                  <input type="number" step="any" class="form-control" name="paymentAmount" id="paymentAmount" placeholder="">
                 </div>
 
                 <hr class="mb-4">
