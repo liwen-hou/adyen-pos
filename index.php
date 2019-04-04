@@ -98,7 +98,7 @@ date_default_timezone_set("Europe/Amsterdam");
 
                 <hr class="mb-4">
 
-                <button class="btn btn-primary btn-lg btn-block" type="button" onclick="show(); getMethods();">Continue to checkout</button>
+                <button class="btn btn-primary btn-lg btn-block" type="button">Continue to checkout</button>
               </form>
               <p class="card-text">This will bring you to the payment details page.</p>
             </div>
