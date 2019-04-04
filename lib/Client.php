@@ -14,6 +14,7 @@ class Client
       // Generate url
       $url = Config::getTerminalUrl();
       $date = new DateTime();
+      $date = "/Date(". strval($date) . ")/";
       $serviceID =  strval(mt_rand(100000,999999));
       // Generate data
 
@@ -32,7 +33,7 @@ class Client
             "SaleData" => array(
               "SaleTransactionID" => array(
                 "TransactionID" => "27908",
-                "TimeStamp" => "/Date(". $date. ")/"
+                "TimeStamp" => $date
               )
             ),
             "PaymentTransaction" => array(
