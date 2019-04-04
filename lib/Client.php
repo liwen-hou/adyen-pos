@@ -14,7 +14,7 @@ class Client
       // Generate url
       $url = Config::getTerminalUrl();
       $date = new DateTime();
-      $date = strval($date);
+      // $date = strval($date);
       $serviceID =  strval(mt_rand(100000,999999));
       // Generate data
       echo $date;
@@ -96,7 +96,7 @@ if(isset($_POST['submit']))
 {
   $result = Client::doPostRequest();
   echo $result;
-  $result = json_decode($result, true);
+  // $result = json_decode($result, true);
 
 }
 
