@@ -93,7 +93,10 @@ if(isset($_POST['submit']))
 {
   $result = Client::doPostRequest();
   $result = json_decode($result, true);
-  echo $result["SaleToPOIResponse"]["Response"];
+  echo $result["SaleToPOIResponse"]["PaymentResponse"];
+  echo $result["PaymentResponse"];
+  echo $result["SaleToPOIResponse"];
+  echo $result["SaleToPOIResponse"]["PaymentResponse"]["Response"]["Result"];
 
 }
 
