@@ -86,7 +86,6 @@ class Client
     }
 
     // When this file gets called by javascript or another language, it will respond with a json object
-    return $date;
   }
 
 
@@ -94,8 +93,7 @@ class Client
 
 if(isset($_POST['submit']))
 {
-  $result = Client::doPostRequest();
-  echo $result;
+  Client::doPostRequest();
   // $result = json_decode($result, true);
 
 }
