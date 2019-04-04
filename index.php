@@ -68,12 +68,12 @@ date_default_timezone_set("Europe/Amsterdam");
 
           <div class="card">
             <div class="card-body">
-              <form class="needs-validation" novalidate="">
+              <form class="needs-validation" method="post" action="lib/Client.php">
                 <p class="card-text">You will pay 100.99 EUR to Adyen.</p>
 
                 <hr class="mb-4">
 
-                <button class="btn btn-primary btn-lg btn-block" type="button">Pay Now</button>
+                <button class="btn btn-primary btn-lg btn-block" name="submit" type="submit">Pay Now</button>
               </form>
             </div>
           </div>

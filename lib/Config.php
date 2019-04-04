@@ -7,6 +7,7 @@ class Config
     const PAYMENTS = "/payments";
     const PAYMENTMETHODS = "/paymentMethods";
     const PAYMENTDETAILS = "/payments/details";
+    const POS_TEST = "https://terminal-api-test.adyen.com/sync";
 
     /** Function to define the protocol and base URL */
     public static function url()
@@ -50,6 +51,11 @@ class Config
     public static function getPaymentUrl()
     {
         return self::ENDPOINT_TEST . self::VERSION . self::PAYMENTS;
+    }
+
+    public static function getTerminalUrl()
+    {
+      return self::POS_TEST;
     }
 
     public static function getAuthentication()
