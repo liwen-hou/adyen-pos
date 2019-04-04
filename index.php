@@ -52,10 +52,6 @@ date_default_timezone_set("Europe/Amsterdam");
             </div>
             <span class="text-muted">€92.99</span>
           </li>
-          <li class="list-group-item d-flex justify-content-between">
-            <span>Total (EUR)</span>
-            <strong>€100.99</strong>
-          </li>
         </ul>
       </div>
 
@@ -69,7 +65,13 @@ date_default_timezone_set("Europe/Amsterdam");
           <div class="card">
             <div class="card-body">
               <form class="needs-validation" method="post" action="lib/Client.php">
-                <p class="card-text">You will pay 100.99 EUR to Adyen.</p>
+                <div class="mb-3">
+                  <label for="email">Total Amount €:</label>
+                  <input type="email" class="form-control" id="paymentAmount" placeholder="">
+                  <div class="invalid-feedback">
+                    Please enter the correct amount in EUR.
+                  </div>
+                </div>
 
                 <hr class="mb-4">
 

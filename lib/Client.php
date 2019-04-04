@@ -14,6 +14,7 @@ class Client
       // Generate url
       $url = Config::getTerminalUrl();
       $date = new DateTime();
+      $serviceID =  strval(mt_rand(100000,999999));
       // Generate data
 
       $request = array(
@@ -23,21 +24,21 @@ class Client
             "MessageClass" => "Service",
             "MessageCategory" => "Payment",
             "MessageType" => "Request",
-            "ServiceID" => "0207111107",
-            "SaleID" => "POSSystemID12345",
+            "ServiceID" => $serviceID,
+            "SaleID" => "liwenShopID001",
             "POIID" => "e285-401552056"
           ),
           "PaymentRequest" => array(
             "SaleData" => array(
               "SaleTransactionID" => array(
                 "TransactionID" => "27908",
-                "TimeStamp" => "2019-04-04T01:44:13.573Z"
+                "TimeStamp" => $date
               )
             ),
             "PaymentTransaction" => array(
               "AmountsReq" => array(
                 "Currency" => "EUR",
-                "RequestedAmount" => 100.99
+                "RequestedAmount" => $_POST["paymentAmount"]
               )
             )
           )
