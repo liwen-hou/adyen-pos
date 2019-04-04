@@ -9,13 +9,13 @@ class Client
   {
     try{
       // Authentication
-      $authentication = Config::getAuthentication();
+      // $authentication = Config::getAuthentication();
 
       // Generate url
-      $url = Config::getTerminalUrl();
+      // $url = Config::getTerminalUrl();
       $date = new DateTime();
       // $date = strval($date);
-      $serviceID =  strval(mt_rand(100000,999999));
+      // $serviceID =  strval(mt_rand(100000,999999));
       // Generate data
       echo $date;
       // $request = array(
