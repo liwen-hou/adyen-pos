@@ -14,7 +14,7 @@ class Client
       // Generate url
       $url = Config::getTerminalUrl();
       $date = new DateTime();
-      $date = "/Date(". strval($date) . ")/";
+      $date = strval($date);
       $serviceID =  strval(mt_rand(100000,999999));
       // Generate data
       echo $date;
