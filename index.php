@@ -50,11 +50,11 @@ date_default_timezone_set("Europe/Amsterdam");
               <h6 class="my-0">Third item</h6>
               <small class="text-muted">Brief description</small>
             </div>
-            <span class="text-muted">€2</span>
+            <span class="text-muted">€92.99</span>
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (EUR)</span>
-            <strong>€10</strong>
+            <strong>€100.99</strong>
           </li>
         </ul>
       </div>
@@ -63,7 +63,7 @@ date_default_timezone_set("Europe/Amsterdam");
       <div class="col-md-6">
         <div id="shopperDetails">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
-            <span>Something About You</span>
+            <span>Confirm and Pay</span>
           </h4>
 
           <div class="card">
