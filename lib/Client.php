@@ -10,7 +10,7 @@ class Client
     try{
       // Authentication
       $authentication = Config::getAuthentication();
-
+      echo gettype($_POST["paymentAmount"]);
       // Generate url
       $url = Config::getTerminalUrl();
       $date = new DateTime();
