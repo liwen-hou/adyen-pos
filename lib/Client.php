@@ -23,7 +23,7 @@ class Client
             "MessageClass" => "Service",
             "MessageCategory" => "Payment",
             "MessageType" => "Request",
-            "ServiceID" => "0207111109",
+            "ServiceID" => "0207111107",
             "SaleID" => "POSSystemID12345",
             "POIID" => "e285-401552056"
           ),
@@ -93,8 +93,8 @@ class Client
 if(isset($_POST['submit']))
 {
   $result = Client::doPostRequest();
-  $result = json_decode($result, true);
   echo $result;
+  $result = json_decode($result, true);
 
 }
 
