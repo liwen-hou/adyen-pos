@@ -15,7 +15,7 @@ class Client
       $url = Config::getTerminalUrl();
       $date = new DateTime();
       // Generate data
-      $serviceID = strval(mt_rand(1000000,9999999))
+      $serviceID = strval(mt_rand(1000000,9999999));
       $request = array(
         "SaleToPOIRequest" => array(
           "MessageHeader" => array(
@@ -37,7 +37,7 @@ class Client
             "PaymentTransaction" => array(
               "AmountsReq" => array(
                 "Currency" => "EUR",
-                "RequestedAmount" => 100.99
+                "RequestedAmount" => $_POST["paymentAmount"]
               )
             )
           )
