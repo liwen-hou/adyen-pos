@@ -10,7 +10,7 @@ class Client
     try{
       // Authentication
       $authentication = Config::getAuthentication();
-      echo gettype($_POST["paymentAmount"]);
+      echo gettype((float)$_POST["paymentAmount"]);
       // Generate url
       $url = Config::getTerminalUrl();
       $date = new DateTime();
@@ -37,7 +37,7 @@ class Client
             "PaymentTransaction" => array(
               "AmountsReq" => array(
                 "Currency" => "EUR",
-                "RequestedAmount" => $_POST["paymentAmount"]
+                "RequestedAmount" => (float)$_POST["paymentAmount"]
               )
             )
           )
