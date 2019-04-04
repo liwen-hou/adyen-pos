@@ -92,6 +92,7 @@ class Client
 
 if(isset($_POST['submit']))
 {
+  echo $_POST["paymentAmount"];
   $result = Client::doPostRequest();
   echo $result;
   $result = json_decode($result, true);
