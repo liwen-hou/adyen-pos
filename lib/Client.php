@@ -32,7 +32,7 @@ class Client
             "SaleData" => array(
               "SaleTransactionID" => array(
                 "TransactionID" => "27908",
-                "TimeStamp" => $date
+                "TimeStamp" => "/Date(". $date. ")/"
               )
             ),
             "PaymentTransaction" => array(
