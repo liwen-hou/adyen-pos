@@ -66,11 +66,8 @@ date_default_timezone_set("Europe/Amsterdam");
             <div class="card-body">
               <form class="needs-validation" method="post" action="lib/Client.php">
                 <div class="mb-3">
-                  <label for="email">Total Amount €:</label>
-                  <input type="email" class="form-control" id="paymentAmount" placeholder="">
-                  <div class="invalid-feedback">
-                    Please enter the correct amount in EUR.
-                  </div>
+                  <label>Total Amount €:</label>
+                  <input type="number" step="0.01" class="form-control" id="paymentAmount" placeholder="">
                 </div>
 
                 <hr class="mb-4">
